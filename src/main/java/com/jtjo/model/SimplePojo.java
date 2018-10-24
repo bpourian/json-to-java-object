@@ -4,7 +4,7 @@ package com.jtjo.model;
  *
  * @author Benjamin Pourian (benjamin.pourian@gmail.com)
  */
-public class Alpha {
+public class SimplePojo {
 
     private String name;
     private int age;

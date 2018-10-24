@@ -6,12 +6,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@DisplayName("Alpha Class - demostrating the use of GSON")
-class AlphaTest {
+@DisplayName("SimplePojo Class - demonstrating the use of GSON annotations SerializedName")
+class AnnotationPojoTest {
 
-    private Alpha actual;
+    private AnnotationPojo actual;
     private Gson gson;
     private JsonObject jsonObject;
 
@@ -22,23 +22,22 @@ class AlphaTest {
     }
 
     @Test
-    @DisplayName("Simple Json converted into Java object")
+    @DisplayName("Simple Json converted into Java object using SerializedName")
     public void jsonToObjectOne(){
 
         /* Given a simple json object response has been received **/
-        jsonObject.addProperty("name", "bpourian");
-        jsonObject.addProperty("age", 2);
-        jsonObject.addProperty("favouriteColour", "Pink");
+        jsonObject.addProperty("someName", "bpourian");
+        jsonObject.addProperty("someAge", 2);
+        jsonObject.addProperty("someColour", "Pink");
         jsonObject.addProperty("address", "Test Address");
         jsonObject.addProperty("random", "randomData");
 
         /* When we convert the json object to a java object using GSON **/
-        actual = gson.fromJson(jsonObject, Alpha.class);
+        actual = gson.fromJson(jsonObject, AnnotationPojo.class);
 
         /* Then the object should contain the value from the json object **/
         assertEquals("bpourian", actual.getName());
         assertEquals(2, actual.getAge());
         assertEquals("Pink", actual.getFavouriteColour());
     }
-
 }
