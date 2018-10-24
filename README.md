@@ -15,7 +15,7 @@ json object.
 
 ### AnnotationPojo Class
 
-This class is another simple java object with the addition of annotations from the Gson library `com.google.gson.annotations.çName`.
+This class is another simple java object with the addition of annotations from the Gson library `com.google.gson.annotations.SerializedName`.
 You might wonder why you would use this class. One of the reasons you might use this library is when you have specific 
 domain language and your models are created around this. If you are consuming third party api's which most likely be in the
 form of a json response you may come across 'keys' in a `key : value` that don't conform to your model.
