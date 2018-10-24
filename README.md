@@ -21,8 +21,8 @@ domain language and your models are created around this. If you are consuming th
 form of a json response you may come across 'keys' in a `key : value` that don't conform to your model.
 
 So instead of changing your model you use the serialized name provided in the json response inside the annotation. So when your
-pojo is instantiated using the gson library it will automatically assign the valued from the json to the correct instance 
-variables of your pojo.
+pojo is instantiated using the gson library it will automatically assign the value from the json object to the correct instance 
+variable of your pojo.
 
 In my test as above I am asserting that the getter methods of the AnnotationPojo instance are returning the correct values from the original json object.
  
