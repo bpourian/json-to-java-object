@@ -22,3 +22,4 @@ public class SimplePojo {
         return favouriteColour;
     }
 }
+

@@ -5,6 +5,8 @@ response.
 
 Please look under the test directory to see different ways of creating a POJO from json.
 
+You can find the blog to this repo here: [How to create a Java Object from a JSON object](https://medium.com/@benpourian/how-to-create-a-java-object-from-a-json-object-c47c08b030c5)
+
 ### SimplePojo Class
 
 This class contains a simple java object with relevant getter methods. In the test you can see I have created a json

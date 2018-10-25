@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  *
+ * @author Benjamin Pourian (benjamin.pourian@gmail.com)
  */
 public class AnnotationPojo {
 
@@ -23,3 +24,6 @@ public class AnnotationPojo {
         return favouriteColour;
     }
 }
+
+
+
